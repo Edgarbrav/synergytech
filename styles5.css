@@ -1,0 +1,139 @@
+/* Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Variables de color */
+:root {
+    --bg-color: #080808;
+    --second-bg-color: #131313;
+    --text-color: white;
+    --main-color: #00ffee;
+}
+
+/* Estilos generales */
+html {
+    font-size: 62.5%; /* Aumentado para hacer la base de 10px en rem */
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal para centrar el dashboard */
+.dashboard-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.dashboard-container {
+    width: 90%;
+    max-width: 800px;
+    background-color: var(--second-bg-color);
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 25px var(--main-color);
+    text-align: center;
+}
+
+/* Títulos principales */
+h1 {
+    font-size: 4rem;
+    color: var(--main-color);
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 3rem;
+    color: var(--main-color);
+    margin-bottom: 1.5rem;
+}
+
+/* Sección de resumen de asistencias */
+.attendance-summary {
+    background-color: var(--bg-color);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 0 15px var(--main-color);
+    font-size: 2rem;
+}
+
+/* Tabla de historial de asistencias */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 3rem;
+    background-color: var(--second-bg-color);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 15px var(--main-color);
+    font-size: 1.8rem;
+}
+
+table th, table td {
+    padding: 1.5rem;
+    text-align: center;
+    color: var(--text-color);
+    border-bottom: 1px solid #444;
+}
+
+table th {
+    background-color: var(--bg-color);
+    color: var(--main-color);
+}
+
+table tr:hover {
+    background-color: rgba(0, 255, 238, 0.1);
+}
+
+/* Sección de grupos y avisos */
+.groups, .announcements {
+    background-color: var(--bg-color);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 0 15px var(--main-color);
+    font-size: 2rem;
+    text-align: left;
+}
+
+.groups ul, .announcements ul {
+    list-style: none;
+}
+
+.groups li, .announcements li {
+    padding: 1rem;
+    border-bottom: 1px solid #444;
+}
+
+.groups li:last-child, .announcements li:last-child {
+    border-bottom: none;
+}
+
+/* Estilo para los títulos de avisos */
+.announcements li strong {
+    color: var(--main-color);
+}
+
+/* Estilos para enlaces y otros elementos interactivos */
+a {
+    color: var(--main-color);
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 1.8rem;
+}
+
+a:hover {
+    color: #fff;
+}
